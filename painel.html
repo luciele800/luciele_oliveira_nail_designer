@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Painel Administrativo | Luciele Oliveira</title>
+
+    <link rel="stylesheet" href="painel.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         MENU LATERAL
+    ========================== -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <span>Luciele</span>
+            <small>OLIVEIRA</small>
+        </div>
+
+        <nav class="menu">
+
+            <button class="menu-item active" data-section="inicio">
+                🏠
+                <span>Início</span>
+            </button>
+
+            <button class="menu-item" data-section="agenda">
+                📅
+                <span>Agenda</span>
+            </button>
+
+            <button class="menu-item" data-section="agendamentos">
+                📋
+                <span>Agendamentos</span>
+            </button>
+
+            <button class="menu-item" data-section="clientes">
+                👩
+                <span>Clientes</span>
+            </button>
+
+            <button class="menu-item" data-section="lembretes">
+                🔔
+                <span>Lembretes</span>
+            </button>
+
+            <button class="menu-item" data-section="galeria">
+                🖼️
+                <span>Galeria</span>
+            </button>
+
+            <button class="menu-item" data-section="avaliacoes">
+                ⭐
+                <span>Avaliações</span>
+            </button>
+
+            <button class="menu-item" data-section="configuracoes">
+                ⚙️
+                <span>Configurações</span>
+            </button>
+
+        </nav>
+
+        <button id="sair" class="btn-sair">
+            🚪 Sair
+        </button>
+
+    </aside>
+
+
+    <!-- =========================
+         CONTEÚDO PRINCIPAL
+    ========================== -->
+
+    <main class="main-content">
+
+        <!-- CABEÇALHO -->
+
+        <header class="topbar">
+
+            <div>
+                <p class="saudacao">Olá, Luciele! 💗</p>
+                <h1 id="tituloPagina">Visão geral</h1>
+            </div>
+
+            <div class="perfil">
+                <div class="avatar">
+                    L
+                </div>
+
+                <div>
+                    <strong>Luciele Oliveira</strong>
+                    <small>Administradora</small>
+                </div>
+            </div>
+
+        </header>
+
+
+        <!-- =========================
+             SEÇÃO INÍCIO
+        ========================== -->
+
+        <section id="inicio" class="section active-section">
+
+            <div class="welcome-card">
+
+                <div>
+                    <span class="tag">PAINEL ADMINISTRATIVO</span>
+
+                    <h2>
+                        Detalhes que transformam. ♥
+                    </h2>
+
+                    <p>
+                        Aqui você poderá organizar seus atendimentos,
+                        horários e clientes em um só lugar.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- CARDS DE RESUMO -->
+
+            <div class="cards">
+
+                <div class="card">
+
+                    <span class="card-icon">📅</span>
+
+                    <div>
+                        <p>Próximos atendimentos</p>
+                        <strong id="proximosAtendimentos">0</strong>
+                    </div>
+
+                </div>
+
+
+                <div class="card">
+
+                    <span class="card-icon">⏰</span>
+
+                    <div>
+                        <p>Horários disponíveis</p>
+                        <strong id="horariosDisponiveis">0</strong>
+                    </div>
+
+                </div>
+
+
+                <div class="card">
+
+                    <span class="card-icon">👩</span>
+
+                    <div>
+                        <p>Clientes</p>
+                        <strong id="totalClientes">0</strong>
+                    </div>
+
+                </div>
+
+
+                <div class="card">
+
+                    <span class="card-icon">🔔</span>
+
+                    <div>
+                        <p>Manutenções próximas</p>
+                        <strong id="manutencoes">0</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRÓXIMOS AGENDAMENTOS -->
+
+            <div class="content-box">
+
+                <div class="box-header">
+
+                    <div>
+                        <h2>Próximos agendamentos</h2>
+                        <p>Confira seus próximos atendimentos.</p>
+                    </div>
+
+                    <button
+                        class="small-button"
+                        data-section="agendamentos"
+                    >
+                        Ver todos
+                    </button>
+
+                </div>
+
+
+                <div id="listaAgendamentos" class="empty-state">
+
+                    <div class="empty-icon">
+                        📅
+                    </div>
+
+                    <h3>Nenhum agendamento ainda</h3>
+
+                    <p>
+                        Quando uma cliente solicitar um horário,
+                        ele aparecerá aqui.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             AGENDA
+        ========================== -->
+
+        <section id="agenda" class="section">
+
+            <div class="section-header">
+
+                <div>
+                    <h2>Minha agenda</h2>
+
+                    <p>
+                        Organize seus dias e horários disponíveis.
+                    </p>
+                </div>
+
+                <button class="primary-button">
+                    + Adicionar horário
+                </button>
+
+            </div>
+
+
+            <div class="content-box">
+
+                <div class="empty-state">
+
+                    <div class="empty-icon">
+                        🗓️
+                    </div>
+
+                    <h3>Sua agenda aparecerá aqui</h3>
+
+                    <p>
+                        Em breve você poderá definir os dias e horários
+                        em que estará disponível para atendimento.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             AGENDAMENTOS
+        ========================== -->
+
+        <section id="agendamentos" class="section">
+
+            <div class="section-header">
+
+                <div>
+                    <h2>Agendamentos</h2>
+
+                    <p>
+                        Gerencie os pedidos enviados pelas clientes.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="content-box">
+
+                <div class="empty-state">
+
+                    <div class="empty-icon">
+                        📋
+                    </div>
+
+                    <h3>Nenhum pedido recebido</h3>
+
+                    <p>
+                        Os pedidos de agendamento aparecerão aqui
+                        para você confirmar.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CLIENTES
+        ========================== -->
+
+        <section id="clientes" class="section">
+
+            <div class="section-header">
+
+                <div>
+                    <h2>Clientes</h2>
+
+                    <p>
+                        Consulte suas clientes e o histórico de atendimentos.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="content-box">
+
+                <div class="empty-state">
+
+                    <div class="empty-icon">
+                        👩
+                    </div>
+
+                    <h3>Nenhuma cliente cadastrada</h3>
+
+                    <p>
+                        As clientes aparecerão aqui depois dos primeiros
+                        agendamentos.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             LEMBRETES
+        ========================== -->
+
+        <section id="lembretes" class="section">
+
+            <div class="section-header">
+
+                <div>
+                    <h2>Lembretes</h2>
+
+                    <p>
+                        Acompanhe as manutenções que estão próximas.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="content-box">
+
+                <div class="empty-state">
+
+                    <div class="empty-icon">
+                        🔔
+                    </div>
+
+                    <h3>Nenhum lembrete</h3>
+
+                    <p>
+                        Os lembretes de manutenção aparecerão aqui.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             GALERIA
+        ========================== -->
+
+        <section id="galeria" class="section">
+
+            <div class="section-header">
+
+                <div>
+                    <h2>Galeria</h2>
+
+                    <p>
+                        Gerencie as fotos dos seus trabalhos.
+                    </p>
+                </div>
+
+                <button class="primary-button">
+                    + Adicionar foto
+                </button>
+
+            </div>
+
+
+            <div class="content-box">
+
+                <div class="empty-state">
+
+                    <div class="empty-icon">
+                        🖼️
+                    </div>
+
+                    <h3>Sua galeria está vazia</h3>
+
+                    <p>
+                        Você poderá adicionar fotos dos seus trabalhos
+                        aqui.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             AVALIAÇÕES
+        ========================== -->
+
+        <section id="avaliacoes" class="section">
+
+            <div class="section-header">
+
+                <div>
+                    <h2>Avaliações</h2>
+
+                    <p>
+                        Veja o que suas clientes acharam dos atendimentos.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="content-box">
+
+                <div class="empty-state">
+
+                    <div class="empty-icon">
+                        ⭐
+                    </div>
+
+                    <h3>Nenhuma avaliação ainda</h3>
+
+                    <p>
+                        As avaliações das suas clientes aparecerão aqui.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CONFIGURAÇÕES
+        ========================== -->
+
+        <section id="configuracoes" class="section">
+
+            <div class="section-header">
+
+                <div>
+                    <h2>Configurações</h2>
+
+                    <p>
+                        Personalize as informações do seu atendimento.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="content-box settings-box">
+
+                <div class="setting-item">
+
+                    <div>
+                        <strong>Nome profissional</strong>
+                        <p>Luciele Oliveira</p>
+                    </div>
+
+                </div>
+
+
+                <div class="setting-item">
+
+                    <div>
+                        <strong>Instagram</strong>
+                        <p>Seu Instagram será configurado aqui.</p>
+                    </div>
+
+                </div>
+
+
+                <div class="setting-item">
+
+                    <div>
+                        <strong>Horários de atendimento</strong>
+                        <p>
+                            Você poderá definir seus horários
+                            sem precisar alterar códigos.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="painel.js"></script>
+
+</body>
+
+</html>

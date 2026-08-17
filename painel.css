@@ -1,0 +1,695 @@
+/* =========================================
+   CONFIGURAÇÕES GERAIS
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #fff8fa;
+
+    color: #4b2937;
+
+    min-height: 100vh;
+}
+
+
+/* =========================================
+   MENU LATERAL
+========================================= */
+
+.sidebar {
+    position: fixed;
+
+    left: 0;
+    top: 0;
+
+    width: 250px;
+    height: 100vh;
+
+    background: #ffffff;
+
+    border-right: 1px solid #f0dce3;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 30px 18px;
+
+    z-index: 100;
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+.logo {
+    text-align: center;
+
+    margin-bottom: 35px;
+}
+
+.logo span {
+    display: block;
+
+    font-family: Georgia, serif;
+
+    font-size: 30px;
+
+    color: #c96f8d;
+}
+
+.logo small {
+    display: block;
+
+    margin-top: 3px;
+
+    font-size: 10px;
+
+    letter-spacing: 5px;
+
+    color: #8d6975;
+}
+
+
+/* =========================================
+   MENU
+========================================= */
+
+.menu {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+}
+
+.menu-item {
+    width: 100%;
+
+    border: none;
+
+    background: transparent;
+
+    color: #765764;
+
+    padding: 13px 15px;
+
+    border-radius: 12px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    font-size: 14px;
+
+    text-align: left;
+
+    cursor: pointer;
+
+    transition: 0.25s;
+}
+
+.menu-item:hover {
+    background: #fff0f5;
+
+    color: #bd6684;
+}
+
+.menu-item.active {
+    background: #f8dce6;
+
+    color: #ad5574;
+
+    font-weight: bold;
+}
+
+
+/* =========================================
+   BOTÃO SAIR
+========================================= */
+
+.btn-sair {
+    margin-top: auto;
+
+    width: 100%;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: #fff0f3;
+
+    color: #b35c76;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    transition: 0.25s;
+}
+
+.btn-sair:hover {
+    background: #f8dce5;
+}
+
+
+/* =========================================
+   CONTEÚDO PRINCIPAL
+========================================= */
+
+.main-content {
+    margin-left: 250px;
+
+    min-height: 100vh;
+
+    padding: 30px 40px;
+}
+
+
+/* =========================================
+   TOPO
+========================================= */
+
+.topbar {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 30px;
+}
+
+.saudacao {
+    color: #a16d7c;
+
+    font-size: 14px;
+
+    margin-bottom: 5px;
+}
+
+.topbar h1 {
+    font-family: Georgia, serif;
+
+    font-size: 30px;
+
+    color: #4b2937;
+}
+
+
+/* =========================================
+   PERFIL
+========================================= */
+
+.perfil {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+.perfil strong {
+    display: block;
+
+    font-size: 14px;
+}
+
+.perfil small {
+    display: block;
+
+    margin-top: 3px;
+
+    color: #987582;
+
+    font-size: 12px;
+}
+
+.avatar {
+    width: 42px;
+    height: 42px;
+
+    border-radius: 50%;
+
+    background: #e9a7bc;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-weight: bold;
+
+    font-size: 17px;
+}
+
+
+/* =========================================
+   SEÇÕES
+========================================= */
+
+.section {
+    display: none;
+}
+
+.section.active-section {
+    display: block;
+}
+
+
+/* =========================================
+   CARD DE BOAS-VINDAS
+========================================= */
+
+.welcome-card {
+    background: linear-gradient(
+        135deg,
+        #f9dce6,
+        #fff1f5
+    );
+
+    border-radius: 20px;
+
+    padding: 30px;
+
+    margin-bottom: 25px;
+
+    border: 1px solid #f2d4df;
+}
+
+.tag {
+    display: inline-block;
+
+    padding: 6px 10px;
+
+    background: rgba(255, 255, 255, 0.7);
+
+    border-radius: 20px;
+
+    font-size: 10px;
+
+    letter-spacing: 1px;
+
+    color: #a45c75;
+
+    margin-bottom: 12px;
+}
+
+.welcome-card h2 {
+    font-family: Georgia, serif;
+
+    font-size: 25px;
+
+    margin-bottom: 8px;
+}
+
+.welcome-card p {
+    color: #795864;
+
+    font-size: 14px;
+
+    max-width: 600px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   CARDS DE RESUMO
+========================================= */
+
+.cards {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 18px;
+
+    margin-bottom: 25px;
+}
+
+.card {
+    background: #ffffff;
+
+    border: 1px solid #f0dce3;
+
+    border-radius: 17px;
+
+    padding: 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    box-shadow:
+        0 5px 18px rgba(170, 100, 125, 0.05);
+}
+
+.card-icon {
+    width: 43px;
+    height: 43px;
+
+    border-radius: 12px;
+
+    background: #fff0f4;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 20px;
+}
+
+.card p {
+    font-size: 12px;
+
+    color: #987582;
+
+    margin-bottom: 5px;
+}
+
+.card strong {
+    font-size: 24px;
+
+    color: #4b2937;
+}
+
+
+/* =========================================
+   CAIXAS DE CONTEÚDO
+========================================= */
+
+.content-box {
+    background: #ffffff;
+
+    border: 1px solid #f0dce3;
+
+    border-radius: 18px;
+
+    padding: 25px;
+
+    margin-bottom: 25px;
+}
+
+.box-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+.box-header h2 {
+    font-family: Georgia, serif;
+
+    font-size: 20px;
+
+    margin-bottom: 5px;
+}
+
+.box-header p {
+    font-size: 13px;
+
+    color: #92727d;
+}
+
+
+/* =========================================
+   ESTADO VAZIO
+========================================= */
+
+.empty-state {
+    text-align: center;
+
+    padding: 40px 20px;
+
+    color: #92727d;
+}
+
+.empty-icon {
+    font-size: 35px;
+
+    margin-bottom: 12px;
+}
+
+.empty-state h3 {
+    color: #60404c;
+
+    font-size: 17px;
+
+    margin-bottom: 7px;
+}
+
+.empty-state p {
+    font-size: 13px;
+
+    line-height: 1.5;
+
+    max-width: 500px;
+
+    margin: auto;
+}
+
+
+/* =========================================
+   CABEÇALHO DAS SEÇÕES
+========================================= */
+
+.section-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 25px;
+}
+
+.section-header h2 {
+    font-family: Georgia, serif;
+
+    font-size: 27px;
+
+    margin-bottom: 6px;
+}
+
+.section-header p {
+    color: #92727d;
+
+    font-size: 14px;
+}
+
+
+/* =========================================
+   BOTÕES
+========================================= */
+
+.primary-button,
+.small-button {
+    border: none;
+
+    background: #d47796;
+
+    color: white;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    transition: 0.25s;
+}
+
+.primary-button {
+    padding: 12px 18px;
+
+    font-size: 13px;
+}
+
+.small-button {
+    padding: 9px 14px;
+
+    font-size: 12px;
+}
+
+.primary-button:hover,
+.small-button:hover {
+    background: #bd6482;
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================================
+   CONFIGURAÇÕES
+========================================= */
+
+.settings-box {
+    padding: 0;
+}
+
+.setting-item {
+    padding: 22px;
+
+    border-bottom: 1px solid #f3e3e8;
+}
+
+.setting-item:last-child {
+    border-bottom: none;
+}
+
+.setting-item strong {
+    display: block;
+
+    margin-bottom: 5px;
+
+    font-size: 14px;
+}
+
+.setting-item p {
+    color: #92727d;
+
+    font-size: 13px;
+}
+
+
+/* =========================================
+   RESPONSIVIDADE
+========================================= */
+
+@media (max-width: 1100px) {
+
+    .cards {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================================
+   TABLET / CELULAR
+========================================= */
+
+@media (max-width: 768px) {
+
+    .sidebar {
+        width: 70px;
+
+        padding: 20px 10px;
+    }
+
+    .logo span {
+        font-size: 18px;
+    }
+
+    .logo small {
+        display: none;
+    }
+
+    .menu-item {
+        justify-content: center;
+
+        padding: 13px 5px;
+    }
+
+    .menu-item span {
+        display: none;
+    }
+
+    .btn-sair {
+        font-size: 0;
+    }
+
+    .btn-sair:first-letter {
+        font-size: 16px;
+    }
+
+    .main-content {
+        margin-left: 70px;
+
+        padding: 25px 20px;
+    }
+
+    .topbar h1 {
+        font-size: 25px;
+    }
+
+    .perfil div:last-child {
+        display: none;
+    }
+
+    .section-header {
+        align-items: flex-start;
+
+        gap: 15px;
+    }
+
+}
+
+
+/* =========================================
+   CELULAR
+========================================= */
+
+@media (max-width: 520px) {
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .main-content {
+        padding: 20px 14px;
+    }
+
+    .topbar {
+        align-items: flex-start;
+    }
+
+    .topbar h1 {
+        font-size: 22px;
+    }
+
+    .welcome-card {
+        padding: 22px;
+    }
+
+    .welcome-card h2 {
+        font-size: 21px;
+    }
+
+    .section-header {
+        flex-direction: column;
+    }
+
+    .primary-button {
+        width: 100%;
+    }
+
+    .box-header {
+        align-items: flex-start;
+
+        gap: 15px;
+    }
+
+}
