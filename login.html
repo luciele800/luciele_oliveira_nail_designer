@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login | Luciele Oliveira</title>
+
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+
+    <main class="login-container">
+
+        <section class="login-card">
+
+            <div class="logo">
+                <span>Luciele</span>
+                <small>OLIVEIRA</small>
+            </div>
+
+            <div class="login-header">
+                <h1>Área administrativa</h1>
+                <p>Entre para gerenciar seus agendamentos.</p>
+            </div>
+
+            <form id="loginForm">
+
+                <div class="input-group">
+                    <label for="usuario">Usuário</label>
+                    <input
+                        type="text"
+                        id="usuario"
+                        placeholder="Digite seu usuário"
+                        required
+                    >
+                </div>
+
+                <div class="input-group">
+                    <label for="senha">Senha</label>
+
+                    <div class="password-container">
+                        <input
+                            type="password"
+                            id="senha"
+                            placeholder="Digite sua senha"
+                            required
+                        >
+
+                        <button
+                            type="button"
+                            id="mostrarSenha"
+                            aria-label="Mostrar senha"
+                        >
+                            👁
+                        </button>
+                    </div>
+                </div>
+
+                <p id="mensagemErro" class="mensagem-erro"></p>
+
+                <button type="submit" class="btn-login">
+                    Entrar
+                </button>
+
+            </form>
+
+            <a href="index.html" class="voltar">
+                ← Voltar para o site
+            </a>
+
+        </section>
+
+    </main>
+
+    <script src="login.js"></script>
+
+</body>
+</html>

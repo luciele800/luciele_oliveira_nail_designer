@@ -1,0 +1,283 @@
+/* ==============================
+   CONFIGURAÇÕES GERAIS
+============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+
+    background: linear-gradient(
+        135deg,
+        #fff,
+        #ffe9f1
+    );
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #4a2634;
+}
+
+
+/* ==============================
+   CONTAINER
+============================== */
+
+.login-container {
+    width: 100%;
+    padding: 20px;
+}
+
+
+/* ==============================
+   CARTÃO DE LOGIN
+============================== */
+
+.login-card {
+    width: 100%;
+    max-width: 420px;
+
+    margin: auto;
+    padding: 40px 35px;
+
+    background: rgba(255, 255, 255, 0.95);
+
+    border-radius: 24px;
+
+    box-shadow:
+        0 15px 40px rgba(190, 100, 130, 0.15);
+
+    text-align: center;
+}
+
+
+/* ==============================
+   LOGO
+============================== */
+
+.logo {
+    margin-bottom: 30px;
+}
+
+.logo span {
+    display: block;
+
+    font-family: Georgia, serif;
+
+    font-size: 34px;
+
+    color: #c96b8c;
+}
+
+.logo small {
+    display: block;
+
+    margin-top: 3px;
+
+    letter-spacing: 5px;
+
+    font-size: 11px;
+
+    color: #8c6471;
+}
+
+
+/* ==============================
+   CABEÇALHO
+============================== */
+
+.login-header h1 {
+    font-family: Georgia, serif;
+
+    font-size: 25px;
+
+    margin-bottom: 8px;
+
+    color: #492633;
+}
+
+.login-header p {
+    font-size: 14px;
+
+    color: #866b74;
+
+    margin-bottom: 28px;
+}
+
+
+/* ==============================
+   CAMPOS
+============================== */
+
+.input-group {
+    text-align: left;
+
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    color: #5c3946;
+}
+
+.input-group input {
+    width: 100%;
+
+    padding: 14px 15px;
+
+    border: 1px solid #e5cbd4;
+
+    border-radius: 12px;
+
+    outline: none;
+
+    font-size: 15px;
+
+    background: #fffafa;
+
+    color: #432631;
+
+    transition: 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #d7829f;
+
+    box-shadow:
+        0 0 0 3px rgba(215, 130, 159, 0.12);
+}
+
+
+/* ==============================
+   SENHA
+============================== */
+
+.password-container {
+    position: relative;
+}
+
+.password-container input {
+    padding-right: 50px;
+}
+
+#mostrarSenha {
+    position: absolute;
+
+    right: 10px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    border: none;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    font-size: 18px;
+
+    padding: 5px;
+}
+
+
+/* ==============================
+   MENSAGEM DE ERRO
+============================== */
+
+.mensagem-erro {
+    min-height: 20px;
+
+    margin-bottom: 8px;
+
+    font-size: 13px;
+
+    color: #c94b68;
+}
+
+
+/* ==============================
+   BOTÃO LOGIN
+============================== */
+
+.btn-login {
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: #d47796;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.btn-login:hover {
+    background: #c46383;
+
+    transform: translateY(-1px);
+}
+
+
+/* ==============================
+   VOLTAR
+============================== */
+
+.voltar {
+    display: inline-block;
+
+    margin-top: 25px;
+
+    color: #a85c78;
+
+    text-decoration: none;
+
+    font-size: 14px;
+}
+
+.voltar:hover {
+    text-decoration: underline;
+}
+
+
+/* ==============================
+   CELULAR
+============================== */
+
+@media (max-width: 480px) {
+
+    .login-card {
+        padding: 32px 22px;
+    }
+
+    .logo span {
+        font-size: 30px;
+    }
+
+    .login-header h1 {
+        font-size: 22px;
+    }
+}
