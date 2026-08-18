@@ -19,7 +19,7 @@
     hífen
 */
 
-const WHATSAPP_NUMBER = "42998228884";
+const WHATSAPP_NUMBER = "5542998228884";
 
 
 /*
