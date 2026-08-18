@@ -19,7 +19,7 @@
     hífen
 */
 
-const WHATSAPP_NUMBER = "SEU_NUMERO_AQUI";
+const WHATSAPP_NUMBER = "42998228884";
 
 
 /*
@@ -27,7 +27,7 @@ const WHATSAPP_NUMBER = "SEU_NUMERO_AQUI";
 
     Exemplo:
 
-    https://www.instagram.com/seuinstagram/
+    https://www.instagram.com/luciele.oliveira_?igsh=MTF1dXkwbzF5NGNiNA==&igsi=MTF1dXkwbzF5NGNiNA==
 */
 
 const INSTAGRAM_URL = "#";
