@@ -1,854 +1,971 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-
     <meta charset="UTF-8">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta
         name="description"
-        content="Luciele Oliveira — Nail Designer. Detalhes que transformam."
+        content="Luciele Oliveira — Designer de Unhas. Detalhes que transformam."
     >
 
-    <title>Luciele Oliveira | Nail Designer</title>
+    <title>Luciele Oliveira | Designer de Unhas</title>
 
+    <!-- Fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
         rel="stylesheet"
     >
 
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
-
 </head>
-
 
 <body>
 
+    <!-- ==========================================
+         CABEÇALHO
+    =========================================== -->
 
-<!-- ==============================
-     CABEÇALHO
-================================ -->
+    <header class="header">
 
-<header class="header">
+        <div class="container nav">
 
-    <a href="#inicio" class="logo">
+            <a href="#inicio" class="brand">
+                <strong>Luciele Oliveira</strong>
+                <small>Designer de Unhas</small>
+            </a>
 
-        <span class="logo-icon">
-            ♡
-        </span>
+            <button
+                class="menu-toggle"
+                aria-label="Abrir menu"
+                aria-expanded="false"
+            >
+                ☰
+            </button>
 
-        <span class="logo-text">
+            <nav class="menu">
 
-            <strong>
-                Luciele Oliveira
-            </strong>
+                <a href="#inicio">Início</a>
 
-            <small>
-                Nail Designer
-            </small>
+                <a href="#sobre">Sobre mim</a>
 
-        </span>
+                <a href="#servicos">Serviços</a>
 
-    </a>
+                <a href="#galeria">Galeria</a>
+
+                <a href="#valores">Valores</a>
+
+                <a href="#agendamento">Agendamento</a>
+
+                <a href="#agendamento" class="nav-btn">
+                    ♡ Agendar horário
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
 
 
-    <button
-        class="menu-button"
-        id="menuButton"
-        aria-label="Abrir menu"
-    >
-        ☰
-    </button>
+    <main>
+
+        <!-- ==========================================
+             HERO
+        =========================================== -->
+
+        <section class="hero" id="inicio">
+
+            <div class="container hero-grid">
+
+                <div class="hero-content reveal">
+
+                    <p class="eyebrow">
+                        LUCIELE OLIVEIRA
+                    </p>
+
+                    <h1>
+                        Detalhes que<br>
+                        transformam. <span>♡</span>
+                    </h1>
+
+                    <p class="lead">
+                        Unhas feitas com delicadeza, cuidado e atenção
+                        a cada detalhe.
+                    </p>
+
+                    <div class="actions">
+
+                        <a
+                            href="#agendamento"
+                            class="btn primary"
+                        >
+                            Agendar horário
+                        </a>
+
+                        <a
+                            href="#galeria"
+                            class="btn secondary"
+                        >
+                            Conhecer meu trabalho
+                        </a>
+
+                    </div>
+
+                </div>
 
 
-    <nav
-        class="navigation"
-        id="navigation"
-    >
+                <div class="hero-photo placeholder reveal">
 
-        <a href="#inicio">
-            Início
-        </a>
+                    <strong>FOTO PRINCIPAL</strong>
 
-        <a href="#sobre">
-            Sobre
-        </a>
+                    <small>
+                        Sua foto principal será colocada aqui.
+                    </small>
 
-        <a href="#servicos">
-            Serviços
-        </a>
+                </div>
 
-        <a href="#galeria">
-            Galeria
-        </a>
+            </div>
 
-        <a href="#avaliacoes">
-            Avaliações
-        </a>
+        </section>
 
-        <a
-            href="#agendamento"
-            class="navigation-button"
+
+        <!-- ==========================================
+             SOBRE
+        =========================================== -->
+
+        <section class="section pink-bg" id="sobre">
+
+            <div class="container split reveal">
+
+                <div class="section-photo placeholder">
+
+                    <strong>FOTO</strong>
+
+                    <small>
+                        Foto sua ou do seu espaço.
+                    </small>
+
+                </div>
+
+
+                <div class="section-text">
+
+                    <p class="eyebrow">
+                        ESPECIALMENTE PARA VOCÊ ♡
+                    </p>
+
+                    <h2>
+                        Mais do que unhas,<br>
+                        um momento para você.
+                    </h2>
+
+                    <p class="muted">
+                        Cada atendimento é pensado para valorizar
+                        sua beleza e proporcionar uma experiência
+                        especial, com cuidado em cada etapa e
+                        atenção aos pequenos detalhes.
+                    </p>
+
+                    <a href="#footer" class="link">
+                        Conheça minha história →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================================
+             SERVIÇOS
+        =========================================== -->
+
+        <section class="section" id="servicos">
+
+            <div class="container">
+
+                <div class="heading reveal">
+
+                    <p class="eyebrow">
+                        MEU TRABALHO
+                    </p>
+
+                    <h2>
+                        Cuidados e técnicas<br>
+                        pensados para você. ♡
+                    </h2>
+
+                </div>
+
+
+                <div class="cards">
+
+                    <article class="card reveal">
+
+                        <div class="card-photo placeholder">
+                            FOTO
+                        </div>
+
+                        <div class="card-content">
+
+                            <h3>
+                                Alongamento
+                            </h3>
+
+                            <p>
+                                Unhas alongadas com acabamento
+                                delicado e personalizado.
+                            </p>
+
+                            <a href="#agendamento" class="link">
+                                Saiba mais →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="card reveal">
+
+                        <div class="card-photo placeholder">
+                            FOTO
+                        </div>
+
+                        <div class="card-content">
+
+                            <h3>
+                                Manutenção
+                            </h3>
+
+                            <p>
+                                Para manter suas unhas bonitas,
+                                cuidadas e impecáveis.
+                            </p>
+
+                            <a href="#agendamento" class="link">
+                                Saiba mais →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="card reveal">
+
+                        <div class="card-photo placeholder">
+                            FOTO
+                        </div>
+
+                        <div class="card-content">
+
+                            <h3>
+                                Esmaltação em gel
+                            </h3>
+
+                            <p>
+                                Cor, brilho e acabamento para
+                                deixar suas unhas especiais.
+                            </p>
+
+                            <a href="#agendamento" class="link">
+                                Saiba mais →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="card reveal">
+
+                        <div class="card-photo placeholder">
+                            FOTO
+                        </div>
+
+                        <div class="card-content">
+
+                            <h3>
+                                Nail Art
+                            </h3>
+
+                            <p>
+                                Detalhes personalizados para
+                                tornar cada unha única.
+                            </p>
+
+                            <a href="#agendamento" class="link">
+                                Saiba mais →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <p class="center">
+                    <a href="#valores" class="link">
+                        Ver todos os serviços →
+                    </a>
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================================
+             GALERIA
+        =========================================== -->
+
+        <section class="section gallery" id="galeria">
+
+            <div class="container">
+
+                <div class="heading reveal">
+
+                    <p class="eyebrow">
+                        MEU TRABALHO ♡
+                    </p>
+
+                    <h2>
+                        Um pouco do meu trabalho
+                    </h2>
+
+                    <p class="muted">
+                        Cada unha conta uma história.
+                        Confira alguns dos meus trabalhos.
+                    </p>
+
+                </div>
+
+
+                <div class="gallery-grid">
+
+                    <button class="gallery-item placeholder reveal">
+                        FOTO 1
+                    </button>
+
+                    <button class="gallery-item placeholder reveal">
+                        FOTO 2
+                    </button>
+
+                    <button class="gallery-item placeholder reveal">
+                        FOTO 3
+                    </button>
+
+                    <button class="gallery-item placeholder reveal">
+                        FOTO 4
+                    </button>
+
+                    <button class="gallery-item placeholder reveal">
+                        FOTO 5
+                    </button>
+
+                    <button class="gallery-item placeholder reveal">
+                        FOTO 6
+                    </button>
+
+                </div>
+
+
+                <p class="center">
+                    <a href="#galeria" class="link">
+                        Ver galeria completa →
+                    </a>
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================================
+             DIFERENCIAIS
+        =========================================== -->
+
+        <section
+            class="section pink-bg"
+            id="diferenciais"
         >
-            Agendar
-        </a>
 
-    </nav>
+            <div class="container">
 
-</header>
+                <div class="heading reveal">
 
+                    <p class="eyebrow">
+                        POR QUE ESCOLHER MEU TRABALHO ♡
+                    </p>
 
+                    <h2>
+                        Cuidado em cada detalhe.
+                    </h2>
 
-<main>
-
-
-<!-- ==============================
-     HERO / INÍCIO
-================================ -->
-
-<section
-    class="hero"
-    id="inicio"
->
-
-    <div class="hero-content">
-
-        <p class="eyebrow">
-            LUCIELE OLIVEIRA • NAIL DESIGNER
-        </p>
+                </div>
 
 
-        <h1>
-            Detalhes que transformam.
-            <span>♡</span>
-        </h1>
+                <div class="features">
+
+                    <div class="feature reveal">
+
+                        <span>♡</span>
+
+                        <h3>
+                            Atendimento personalizado
+                        </h3>
+
+                        <p>
+                            Cada atendimento é pensado de acordo
+                            com o estilo e as preferências de cada cliente.
+                        </p>
+
+                    </div>
 
 
-        <p class="hero-description">
+                    <div class="feature reveal">
 
-            Alongamento, banho em gel e cuidados
-            feitos com dedicação, carinho e atenção
-            a cada detalhe.
+                        <span>✦</span>
 
-        </p>
+                        <h3>
+                            Atenção aos detalhes
+                        </h3>
 
+                        <p>
+                            Do preparo ao acabamento,
+                            cada etapa recebe cuidado.
+                        </p>
 
-        <a
-            href="#agendamento"
-            class="button"
-        >
-            Agendar meu horário
-        </a>
-
-    </div>
+                    </div>
 
 
-    <div class="hero-image">
+                    <div class="feature reveal">
 
-        <!--
-            Depois vamos colocar sua foto aqui.
-        -->
+                        <span>♡</span>
 
-        <div class="photo-placeholder">
+                        <h3>
+                            Materiais selecionados
+                        </h3>
 
-            <span>♡</span>
+                        <p>
+                            Produtos escolhidos com atenção
+                            para oferecer um serviço de qualidade.
+                        </p>
 
-            <p>
-                Sua foto aqui
+                    </div>
+
+
+                    <div class="feature reveal">
+
+                        <span>✦</span>
+
+                        <h3>
+                            Ambiente acolhedor
+                        </h3>
+
+                        <p>
+                            Um espaço pensado para que seu momento
+                            seja leve e especial.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================================
+             DEPOIMENTOS
+        =========================================== -->
+
+        <section class="section" id="depoimentos">
+
+            <div class="container">
+
+                <div class="heading reveal">
+
+                    <p class="eyebrow">
+                        O QUE MINHAS CLIENTES DIZEM ♡
+                    </p>
+
+                    <h2>
+                        Experiências que ficam.
+                    </h2>
+
+                </div>
+
+
+                <div class="testimonials">
+
+                    <article class="testimonial reveal">
+
+                        <span>♡♡♡</span>
+
+                        <p>
+                            Seu depoimento real aparecerá aqui.
+                        </p>
+
+                        <strong>
+                            — Cliente
+                        </strong>
+
+                    </article>
+
+
+                    <article class="testimonial reveal">
+
+                        <span>♡♡♡</span>
+
+                        <p>
+                            Seu depoimento real aparecerá aqui.
+                        </p>
+
+                        <strong>
+                            — Cliente
+                        </strong>
+
+                    </article>
+
+
+                    <article class="testimonial reveal">
+
+                        <span>♡♡♡</span>
+
+                        <p>
+                            Seu depoimento real aparecerá aqui.
+                        </p>
+
+                        <strong>
+                            — Cliente
+                        </strong>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================================
+             AGENDAMENTO
+        =========================================== -->
+
+        <section class="booking" id="agendamento">
+
+            <div class="container booking-inner reveal">
+
+                <p class="eyebrow">
+                    SEU MOMENTO COMEÇA AQUI ♡
+                </p>
+
+                <h2>
+                    Pronta para transformar suas unhas?
+                </h2>
+
+                <p>
+                    Confira os horários disponíveis e solicite
+                    seu agendamento.
+                </p>
+
+
+                <div class="booking-info">
+
+                    <div>
+                        <strong>
+                            Horários disponíveis
+                        </strong>
+
+                        <small>
+                            Informados no momento do agendamento.
+                        </small>
+                    </div>
+
+
+                    <div>
+                        <strong>
+                            Formas de pagamento
+                        </strong>
+
+                        <small>
+                            Pix ou dinheiro.
+                        </small>
+                    </div>
+
+                </div>
+
+
+                <button
+                    class="btn light"
+                    id="openBooking"
+                >
+                    ♡ Agendar meu horário
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================================
+             INSTAGRAM
+        =========================================== -->
+
+        <section class="section" id="instagram">
+
+            <div class="container">
+
+                <div class="heading reveal">
+
+                    <p class="eyebrow">
+                        ME ACOMPANHE ♡
+                    </p>
+
+                    <h2>
+                        Siga meu trabalho
+                    </h2>
+
+                    <p class="muted">
+                        Veja mais unhas, novidades e um
+                        pouquinho do meu dia a dia.
+                    </p>
+
+                </div>
+
+
+                <div class="social-grid">
+
+                    <div class="photo placeholder">
+                        FOTO
+                    </div>
+
+                    <div class="photo placeholder">
+                        FOTO
+                    </div>
+
+                    <div class="photo placeholder">
+                        FOTO
+                    </div>
+
+                    <div class="photo placeholder">
+                        FOTO
+                    </div>
+
+                    <div class="photo placeholder">
+                        FOTO
+                    </div>
+
+                    <div class="photo placeholder">
+                        FOTO
+                    </div>
+
+                </div>
+
+
+                <p class="instagram">
+                    @lucieleoliveira
+                </p>
+
+
+                <p class="center">
+
+                    <a
+                        class="btn secondary"
+                        id="instagramLink"
+                        href="#"
+                    >
+                        ♡ Conhecer meu Instagram
+                    </a>
+
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ==========================================
+         RODAPÉ
+    =========================================== -->
+
+    <footer class="footer" id="footer">
+
+        <div class="container footer-grid">
+
+            <div>
+
+                <strong>
+                    Luciele Oliveira
+                </strong>
+
+                <small>
+                    Designer de Unhas
+                </small>
+
+                <p>
+                    Detalhes que transformam. ♡
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Navegação
+                </h3>
+
+                <a href="#inicio">Início</a>
+                <a href="#sobre">Sobre mim</a>
+                <a href="#servicos">Serviços</a>
+                <a href="#galeria">Galeria</a>
+                <a href="#valores">Valores</a>
+                <a href="#agendamento">Agendamento</a>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Contato
+                </h3>
+
+                <a href="#agendamento">
+                    WhatsApp
+                </a>
+
+                <a
+                    id="footerInstagram"
+                    href="#"
+                >
+                    Instagram
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+
+            © 2026 Luciele Oliveira.
+            Todos os direitos reservados.
+
+        </div>
+
+    </footer>
+
+
+    <!-- ==========================================
+         MODAL DE AGENDAMENTO
+    =========================================== -->
+
+    <div
+        class="modal"
+        id="bookingModal"
+        aria-hidden="true"
+    >
+
+        <div
+            class="modal-bg"
+            data-close
+        ></div>
+
+
+        <div class="modal-card">
+
+            <button
+                class="close"
+                data-close
+                aria-label="Fechar"
+            >
+                ×
+            </button>
+
+
+            <p class="eyebrow">
+                AGENDAMENTO ♡
             </p>
+
+            <h2>
+                Solicite seu horário
+            </h2>
+
+            <p class="muted">
+                Preencha os dados. Depois, a solicitação
+                será enviada ao WhatsApp para confirmação.
+            </p>
+
+
+            <form id="bookingForm">
+
+                <label>
+                    Nome
+
+                    <input
+                        type="text"
+                        name="nome"
+                        required
+                    >
+                </label>
+
+
+                <label>
+                    Data desejada
+
+                    <input
+                        type="date"
+                        name="data"
+                        required
+                    >
+                </label>
+
+
+                <label>
+                    Horário desejado
+
+                    <input
+                        type="time"
+                        name="horario"
+                        required
+                    >
+                </label>
+
+
+                <label>
+                    Serviço
+
+                    <select
+                        name="servico"
+                        required
+                    >
+
+                        <option value="">
+                            Selecione
+                        </option>
+
+                        <option>
+                            Alongamento
+                        </option>
+
+                        <option>
+                            Manutenção
+                        </option>
+
+                        <option>
+                            Esmaltação em gel
+                        </option>
+
+                        <option>
+                            Nail Art
+                        </option>
+
+                    </select>
+
+                </label>
+
+
+                <label>
+                    Formato da unha
+
+                    <select
+                        name="formato"
+                        required
+                    >
+
+                        <option value="">
+                            Selecione
+                        </option>
+
+                        <option>
+                            Amendoada
+                        </option>
+
+                        <option>
+                            Quadrada
+                        </option>
+
+                        <option>
+                            Bailarina
+                        </option>
+
+                        <option>
+                            Outro
+                        </option>
+
+                    </select>
+
+                </label>
+
+
+                <label>
+                    Nail Art
+
+                    <select name="nailart">
+
+                        <option>
+                            Não
+                        </option>
+
+                        <option>
+                            Sim
+                        </option>
+
+                    </select>
+
+                </label>
+
+
+                <label>
+                    Observações
+
+                    <textarea
+                        name="observacoes"
+                        rows="3"
+                        placeholder="Conte algum detalhe importante."
+                    ></textarea>
+
+                </label>
+
+
+                <p class="form-note">
+                    Pagamento: Pix ou dinheiro.
+                    O horário só fica confirmado após sua resposta.
+                </p>
+
+
+                <button
+                    class="btn primary full"
+                    type="submit"
+                >
+                    Enviar pelo WhatsApp
+                </button>
+
+            </form>
 
         </div>
 
     </div>
 
-</section>
 
-
-
-<!-- ==============================
-     SOBRE MIM
-================================ -->
-
-<section
-    class="section about"
-    id="sobre"
->
-
-    <div class="about-image">
-
-        <div class="photo-placeholder">
-
-            <span>♡</span>
-
-            <p>
-                Sua foto aqui
-            </p>
-
-        </div>
-
-    </div>
-
-
-    <div class="about-content">
-
-        <p class="eyebrow">
-            SOBRE MIM
-        </p>
-
-
-        <h2>
-            Olá, eu sou a Luciele! ♡
-        </h2>
-
-
-        <p>
-
-            Sou apaixonada pelo universo das unhas e
-            estou construindo minha trajetória como
-            Nail Designer, aperfeiçoando cada técnica
-            com dedicação e carinho.
-
-        </p>
-
-
-        <p>
-
-            Meu objetivo é proporcionar um atendimento
-            acolhedor e criar unhas que combinem com
-            o estilo e a personalidade de cada cliente.
-
-        </p>
-
-
-        <p>
-
-            Cada atendimento é uma nova oportunidade
-            de aprender, evoluir e transformar detalhes
-            em algo especial.
-
-        </p>
-
-    </div>
-
-</section>
-
-
-
-<!-- ==============================
-     SERVIÇOS
-================================ -->
-
-<section
-    class="section services"
-    id="servicos"
->
-
-    <div class="section-title">
-
-        <p class="eyebrow">
-            SERVIÇOS & VALORES
-        </p>
-
-
-        <h2>
-            Escolha o cuidado ideal para você.
-        </h2>
-
-    </div>
-
-
-    <div class="service-grid">
-
-
-        <article class="service-card">
-
-            <span class="service-number">
-                01
-            </span>
-
-            <h3>
-                Alongamento
-            </h3>
-
-            <p>
-
-                Construção do alongamento com formato
-                e acabamento personalizados.
-
-            </p>
-
-            <strong>
-                R$ 90
-            </strong>
-
-        </article>
-
-
-
-        <article class="service-card">
-
-            <span class="service-number">
-                02
-            </span>
-
-            <h3>
-                Manutenção
-            </h3>
-
-            <p>
-
-                Manutenção do alongamento para manter
-                suas unhas bonitas e cuidadas.
-
-            </p>
-
-            <strong>
-                R$ 70
-            </strong>
-
-        </article>
-
-
-
-        <article class="service-card">
-
-            <span class="service-number">
-                03
-            </span>
-
-            <h3>
-                Banho em Gel
-            </h3>
-
-            <p>
-
-                Reforço e acabamento em gel para
-                valorizar as unhas naturais.
-
-            </p>
-
-            <strong>
-                R$ 70
-            </strong>
-
-        </article>
-
-
-
-        <article class="service-card">
-
-            <span class="service-number">
-                04
-            </span>
-
-            <h3>
-                Remoção
-            </h3>
-
-            <p>
-
-                Remoção cuidadosa do produto,
-                respeitando a unha natural.
-
-            </p>
-
-            <strong>
-                R$ 30
-            </strong>
-
-        </article>
-
-    </div>
-
-
-    <div class="service-note">
-
-        <strong>
-            Sobre reparos:
-        </strong>
-
-        Até 7 dias após a aplicação, problemas
-        relacionados à aplicação poderão ter reparo
-        sem custo.
-
-        Após esse período, reparos terão acréscimo
-        de <strong>R$ 10 por unha.</strong>
-
-    </div>
-
-</section>
-
-
-
-<!-- ==============================
-     GALERIA
-================================ -->
-
-<section
-    class="section gallery"
-    id="galeria"
->
-
-    <div class="section-title">
-
-        <p class="eyebrow">
-            MEUS TRABALHOS
-        </p>
-
-
-        <h2>
-            Um pouco do que já fiz.
-        </h2>
-
-    </div>
-
-
-    <div class="gallery-filters">
-
-        <button
-            class="filter active"
-            data-category="todos"
-        >
-            Todos
-        </button>
-
-
-        <button
-            class="filter"
-            data-category="banho"
-        >
-            Banho em Gel
-        </button>
-
-
-        <button
-            class="filter"
-            data-category="alongamento"
-        >
-            Alongamento
-        </button>
-
-
-        <button
-            class="filter"
-            data-category="manutencao"
-        >
-            Manutenções
-        </button>
-
-    </div>
-
-
-    <div class="gallery-grid">
-
-
-        <figure
-            class="gallery-item"
-            data-category="alongamento"
-        >
-
-            <div class="gallery-placeholder">
-                Foto do trabalho
-            </div>
-
-            <figcaption>
-                Alongamento
-            </figcaption>
-
-        </figure>
-
-
-
-        <figure
-            class="gallery-item"
-            data-category="banho"
-        >
-
-            <div class="gallery-placeholder">
-                Foto do trabalho
-            </div>
-
-            <figcaption>
-                Banho em Gel
-            </figcaption>
-
-        </figure>
-
-
-
-        <figure
-            class="gallery-item"
-            data-category="manutencao"
-        >
-
-            <div class="gallery-placeholder">
-                Foto do trabalho
-            </div>
-
-            <figcaption>
-                Manutenção
-            </figcaption>
-
-        </figure>
-
-    </div>
-
-</section>
-
-
-
-<!-- ==============================
-     AVALIAÇÕES
-================================ -->
-
-<section
-    class="section reviews"
-    id="avaliacoes"
->
-
-    <div class="section-title">
-
-        <p class="eyebrow">
-            AVALIAÇÕES
-        </p>
-
-
-        <h2>
-            O que minhas clientes acharam.
-        </h2>
-
-
-        <p>
-            As avaliações serão aprovadas antes
-            de aparecerem no site.
-        </p>
-
-    </div>
-
-
-    <div class="review-empty">
-
-        <span>
-            ♡
-        </span>
-
-        <h3>
-            Suas avaliações aparecerão aqui.
-        </h3>
-
-        <p>
-
-            Em breve você poderá receber avaliações
-            diretamente pelo site.
-
-        </p>
-
-    </div>
-
-</section>
-
-
-
-<!-- ==============================
-     AGENDAMENTO
-================================ -->
-
-<section
-    class="section booking"
-    id="agendamento"
->
-
-    <div class="booking-introduction">
-
-        <p class="eyebrow">
-            AGENDAMENTO
-        </p>
-
-
-        <h2>
-            Vamos marcar seu horário?
-        </h2>
-
-
-        <p>
-
-            Preencha seus dados, escolha o serviço,
-            o formato, a data e o horário.
-
-            Seu pedido será enviado para confirmação.
-
-        </p>
-
-    </div>
-
-
-
-    <form
-        class="booking-form"
-        id="bookingForm"
-    >
-
-
-        <label>
-
-            Seu nome
-
-            <input
-                type="text"
-                id="clientName"
-                placeholder="Digite seu nome"
-                required
-            >
-
-        </label>
-
-
-
-        <label>
-
-            Serviço
-
-            <select
-                id="service"
-                required
-            >
-
-                <option value="">
-                    Selecione um serviço
-                </option>
-
-                <option value="alongamento">
-                    Alongamento — R$ 90
-                </option>
-
-                <option value="manutencao">
-                    Manutenção — R$ 70
-                </option>
-
-                <option value="banho">
-                    Banho em Gel — R$ 70
-                </option>
-
-                <option value="remocao">
-                    Remoção — R$ 30
-                </option>
-
-            </select>
-
-        </label>
-
-
-
-        <label>
-
-            Formato da unha
-
-            <select
-                id="shape"
-                required
-            >
-
-                <option value="">
-                    Selecione um formato
-                </option>
-
-                <option>
-                    Amendoada
-                </option>
-
-                <option>
-                    Quadrada
-                </option>
-
-                <option>
-                    Bailarina
-                </option>
-
-                <option>
-                    Stiletto
-                </option>
-
-                <option>
-                    Oval
-                </option>
-
-            </select>
-
-        </label>
-
-
-
-        <label>
-
-            Data desejada
-
-            <input
-                type="date"
-                id="date"
-                required
-            >
-
-        </label>
-
-
-
-        <label>
-
-            Horário
-
-            <select
-                id="time"
-                required
-            >
-
-                <option value="">
-                    Escolha uma data primeiro
-                </option>
-
-            </select>
-
-        </label>
-
-
-
-        <label>
-
-            Foto de inspiração
-
-            <input
-                type="file"
-                id="inspiration"
-                accept="image/*"
-            >
-
-            <small>
-                Você poderá enviar uma foto da inspiração.
-            </small>
-
-        </label>
-
-
-
-        <label>
-
-            Observações
-
-            <textarea
-                id="notes"
-                rows="4"
-                placeholder="Alguma preferência ou informação importante?"
-            ></textarea>
-
-        </label>
-
-
-
-        <div class="booking-alert">
-
-            <strong>
-                Importante:
-            </strong>
-
-            o horário escolhido é uma solicitação.
-            A confirmação final será feita pela Luciele.
-
-        </div>
-
-
-
-        <button
-            type="submit"
-            class="button"
-        >
-            Enviar solicitação
-        </button>
-
-    </form>
-
-</section>
-
-
-
-<!-- ==============================
-     INSTAGRAM
-================================ -->
-
-<section class="instagram">
-
-    <p class="eyebrow">
-        INSTAGRAM
-    </p>
-
-
-    <h2>
-        Acompanhe meu trabalho.
-    </h2>
-
-
-    <p>
-        Veja novidades, atendimentos e novos trabalhos.
-    </p>
-
-
-    <a
-        href="#"
-        id="instagramLink"
-        class="button button-light"
-        target="_blank"
-    >
-        Abrir Instagram
-    </a>
-
-</section>
-
-
-</main>
-
-
-
-<!-- ==============================
-     RODAPÉ
-================================ -->
-
-<footer class="footer">
-
-    <div>
-
-        <strong>
-            Luciele Oliveira
-        </strong>
-
-        <span>
-            Nail Designer
-        </span>
-
-    </div>
-
-
-    <p>
-        © <span id="year"></span>
-        Luciele Oliveira
-    </p>
-
-
-    <a href="#inicio">
-        Voltar ao topo ↑
-    </a>
-
-</footer>
-
-
-
-<script src="js/script.js"></script>
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
 
 </body>
-
 </html>
